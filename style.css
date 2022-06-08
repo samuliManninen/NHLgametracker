@@ -1,0 +1,311 @@
+body {
+	background: url(taustakuva);
+	background-repeat: no-repeat;
+    background-color: #1c1c1c;
+	background-size: 1903px 100%;
+	font-family: Arial, Georgia, serif;
+	margin: 0px;
+	padding: 0px;	
+	min-width: 1903px;
+	max-width: 1903px;
+	transition: 0s linear;
+    transition-property: background-position;
+}
+
+.gameReelWrapper {
+	margin: 0px;
+	padding: 0px;
+	height: 365px;
+	width: 100%;
+	background-color: #323438;
+	border-top: 40px solid #1c1c1c;
+}
+
+#slideLeft {
+	float: left;
+	width: 3%;
+}
+#slideRight {
+	float: right;
+	width: 3%;
+}
+
+.fakeBorder {
+	height: 40px;
+	width: 100%;
+	background-color: #1c1c1c;
+	border-bottom: 3px solid #b2b2b2;
+	box-sizing: border-box;
+}
+
+.wrapper2 {
+	height: 365px;
+	margin: 0px;
+	z-index: 1;
+	width: 94%;
+	display: inline-block;
+	font-size: 0;
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.gameReel {
+	height: 365px;
+	margin: 0px;
+	z-index: 1;
+	width: 350vw;
+	position: absolute;
+}
+
+.gameReelCell {
+	height: 365px;
+	border: 2px solid #b2b2b2;
+	width: 358px;
+	display: inline-block;
+	margin: 0px;
+	font-size: 16px;
+	text-align: center;
+	box-sizing: border-box;
+	overflow: hidden;
+	color: #999999;
+}
+
+.singleGame {
+	border-collapse: collapse;
+	border-bottom: 2px solid #b2b2b2;
+	height: 25%;
+	display: table;
+	position: relative;
+}
+
+.team1, .team2 {
+	display: table-cell;
+	width: 105px;
+	height: 100%;
+	vertical-align: bottom;
+	position: relative;
+	z-index: 10;
+	color: transparent;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.teamScoreWrapper {
+	display: table-cell;
+	border-left: 2px solid #b2b2b2;
+	border-right: 2px solid #b2b2b2;
+	width: 150px;
+	height: 100%;
+	vertical-align: middle;
+	position: relative;
+	z-index: 10;
+}
+
+.teamScore {
+	font-size: 150%;
+	width: 150px;
+	height: 75%;
+	z-index: 10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.gameTime {
+	height: 25%;
+}
+
+.wrapper3 {
+	position: relative;
+	overflow-y: scroll;
+	height: 75%;
+	width: 100%;
+}
+
+.eventList {
+	text-align: left;
+	position: relative;
+	margin: 0;
+	padding: 10px;
+	font-size: 14px;
+}
+
+.button {
+	color: white;
+	background-color: #1c1c1c;
+	border: none;
+	width: 56.5px;
+	height: 365px;
+	display: inline;
+	margin: 0px;
+	position: relative;
+	z-index: 2;
+}
+
+.cellButton {
+	padding: 3px;
+	color: white;
+	background-color: #1c1c1c;
+	border: none;
+	width: 25px;
+	height: 25px;
+	margin: 0px;
+	z-index: 12;
+}
+
+.content1 {
+	background-color: #1c1c1c;
+	color: #dddddd;
+	padding: 5%;
+	padding-top: 3%;
+	padding-bottom: 0;
+	position: static;
+	width: 70%;
+	height: 640px;
+	margin: auto;
+	margin-top: -3px;
+	border-left: 3px solid #b2b2b2;
+	border-right: 3px solid #b2b2b2;
+}
+
+.content2 {
+	background-color: #1c1c1c;
+	color: #dddddd;
+	padding: 5%;
+	padding-top: 0;
+	padding-bottom: 0;
+	position: static;
+	width: 70%;
+	height: 194px;
+	margin: auto;
+	border-left: 3px solid #b2b2b2;
+	border-right: 3px solid #b2b2b2;
+}
+
+.teamNames {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+#teamNameAway, #teamNameHome {
+	width: 45%;
+	text-decoration: underline;
+	height: 38px;
+}
+
+.statTable {
+	background-color: #323438;
+	display: inline-block;
+	width: 45%;
+	height: 80%;
+	font-size: 80%;
+	overflow-y: scroll;
+	border-collapse: collapse;
+	text-align: center;
+	border: 3px solid #b2b2b2;
+}
+
+#statTableAwayGoalies, #statTableHomeGoalies{
+	height: 60%;
+}
+
+.statTable tr {
+	width: 100%;
+}
+
+.statTable tr:first-child td {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.statTable tr:nth-child(even) {
+	background-color: #4b4d51;
+}
+
+.statTable td {
+	width: 48px;
+}
+
+.statTable td:first-child  {
+	text-align: left;
+	width: 145px;
+}
+
+#footer1, #footer3 {
+	height: 250px;
+	width: 10%;
+	background-color: #1c1c1c;
+	box-sizing: border-box;
+	border-top: 3px solid #b2b2b2;
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+}
+
+#footer2 {
+	height: 250px;
+	width: 80%;
+	background-color: #1c1c1c;
+	display: inline-block;
+	margin: auto;
+	vertical-align: top;
+}
+
+.footerContent{
+	color: white;
+	padding: 30px;
+	padding-bottom: 0px;
+}
+
+.footerTitle {
+	padding-top: 0px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-size: 200%;
+}
+
+.footerUl {
+	width: 70%;
+	margin-left: 15%;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+}
+
+h2 {
+	text-align: center;
+	width: 45%;
+	margin: 10px;
+}
+
+ul {
+	vertical-align: top;
+	column-count: 3;
+}
+
+li {
+	vertical-align: top;
+}
+
+::-webkit-scrollbar {
+    width: auto;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+	background-color: #323438;
+
+}
+ 
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 10px;
+	background-color: #b2b2b2;
+
+}
